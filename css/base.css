@@ -1,0 +1,43 @@
+:root {
+    --body-font: "Poppins", sans-serif;
+    --color-orange: #B43D03;
+    --color-orange-hover: #E7733F;
+    --color-blue: #0CF0F5;
+    --color-ligth: #fff;
+    --body-color: #001118;
+    --social-color: #3D3B44
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+ul, ol{
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-ligth);
+    transition: .5s;
+}
+
+a:hover {
+    color: var(--color-orange-hover)
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}

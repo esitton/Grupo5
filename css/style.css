@@ -1,0 +1,139 @@
+body {
+    font-family: var(--body-font);
+    line-height: 1.5;
+    background-color: var(--body-color);
+    min-height: 100vh;
+    color: var(--color-ligth);
+}
+
+/* Header page */
+header {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0rem 5rem;
+    height: 6.25rem;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-krm {
+    font-weight: 900;
+    display: flex;
+}
+
+/* Header page end */
+
+/* Section class */
+section {
+    display: flex;
+}
+
+.section-base {
+    width: 100%;
+    height: 100vh;
+    padding: 0rem 5rem;
+    padding-top: 60px;
+}
+/* Section class end */
+
+/* Biblioteca */
+
+
+.library {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.img-tabletop {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.box {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.img-tabletop img {
+    border-radius: 1.25rem;
+}
+
+/* Profile */
+
+.masters {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profiles {
+    height: fit-content;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 40px
+}
+
+.profile-card {
+    display: flex;
+    width: 30rem;
+    height: 40rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+    border: 10px solid #fff;
+    border-radius: 2rem;
+    background-image: url(/images/perfil-gabriel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0%);
+}
+
+.profile-card:hover {
+    filter: saturate(80%);
+    transition: 0.5s;
+}
+
+/* Card profile */
+
+.box-social {
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    align-self: flex-end;
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    background-color: var(--social-color);
+}
+
+.box-social li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-social img {
+    display: inline;
+    width: 50%;
+    height: 60%;
+    color: #fff;
+}
+
+.profile-card p {
+    position: absolute;
+    top: 6rem;
+    right: -3rem;
+    transform: rotate(-90deg);
+}
