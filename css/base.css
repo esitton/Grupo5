@@ -5,13 +5,35 @@
     --color-blue: #0CF0F5;
     --color-ligth: #fff;
     --body-color: #001118;
-    --social-color: #3D3B44
+    --social-color: #3D3B44;
+    --footer-color: #03000C;
+    --wrap-menu-color: #252525;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Header page */
+header {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding: 0rem 5rem;
+    height: 6.25rem;
+    width: 100%;
+    z-index: 1000;
+    justify-content: space-between;
+}
+
+body {
+    font-family: var(--body-font);
+    line-height: 1.5;
+    background-color: var(--body-color);
+    min-height: 100vh;
+    color: var(--color-ligth);
 }
 
 img {
@@ -38,6 +60,47 @@ p {
     font-size: 1.5rem;
 }
 
+/* H2 class */
 h2 {
     font-size: 3rem;
+}
+
+/* Section class */
+section {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.menu {
+    position: relative;
+    display: flex;
+    gap: 20px;
+}
+
+.menu-wrap {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 1.5rem;
+    background-color: var(--wrap-menu-color);
+    padding: 12px;
+    border-radius: 0.5rem;
+}
+
+.menu li:hover ul, .menu li.over ul{
+    display:block;
+}
+
+
+footer {
+    background-color: var(--footer-color);
+    display: flex;
+    width: auto;
+    padding: 5rem;
+    align-items: flex-start;
+    gap: 5rem;  
 }

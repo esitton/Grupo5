@@ -1,27 +1,3 @@
-body {
-    font-family: var(--body-font);
-    line-height: 1.5;
-    background-color: var(--body-color);
-    min-height: 100vh;
-    color: var(--color-ligth);
-}
-
-/* Header page */
-header {
-    display: flex;
-    position: absolute;
-    align-items: center;
-    padding: 0rem 5rem;
-    height: 6.25rem;
-    width: 100%;
-    z-index: 1000;
-    justify-content: space-between;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
-}
 
 .logo-krm {
     font-weight: 900;
@@ -30,10 +6,6 @@ nav {
 
 /* Header page end */
 
-/* Section class */
-section {
-    display: flex;
-}
 
 .section-base {
     width: 100%;
@@ -46,7 +18,7 @@ section {
 /* Biblioteca */
 
 
-.library {
+.div-text { /* Esta classe afeta todos os textos da segunda section da versão atual, todas que há um h2 e um p/article */
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -87,6 +59,8 @@ section {
     gap: 40px
 }
 
+/* Card profile gabriel-default */
+
 .profile-card {
     display: flex;
     width: 30rem;
@@ -105,6 +79,55 @@ section {
     filter: saturate(80%);
     transition: 0.5s;
 }
+
+/* Card profile esther */
+
+.profile-card-esther {
+    display: flex;
+    width: 30rem;
+    height: 40rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+    border: 10px solid #fff;
+    border-radius: 2rem;
+    background-image: url(/images/perfil-esther.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0%);
+}
+
+.profile-card-esther:hover {
+    filter: saturate(80%);
+    transition: 0.5s;
+}
+
+/* Card profile estamos-contatando */
+
+.profile-card-none {
+    display: flex;
+    width: 30rem;
+    height: 40rem;
+    padding: 2rem 2rem;
+    justify-content: center;
+    border: 10px solid #fff;
+    border-radius: 2rem;
+    background-image: url(/images/perfil-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(0%);
+}
+
+.profile-card-none div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card-none:hover {
+    filter: saturate(80%);
+    transition: 0.5s;
+}
+
 
 /* Card profile */
 
@@ -136,4 +159,57 @@ section {
     top: 6rem;
     right: -3rem;
     transform: rotate(-90deg);
+}
+
+/* Game section */
+.img-section {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 2rem;
+}
+
+/* Game Description */
+
+.game-description {
+    display: flex;
+    gap: 3rem;
+}
+
+.game-description article {
+    font-size: 1.5rem;
+}
+
+.game-description ul {
+    display: flex;
+    gap: 20px
+}
+
+.game-description li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 10rem;
+    gap: 1rem;
+    border: 1px solid #fff;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.game-description li:hover {
+    background-color: var(--color-orange-hover);
+    transition: 0.5s;
+}
+
+.game-description img {
+    width: 1.8rem;
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }

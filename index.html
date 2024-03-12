@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <link rel="stylesheet" type="text/css" href="/css/hero.css">
@@ -18,14 +18,25 @@
 <header>
     <h1 class="logo-krm"> <a href="/index.html">krm</a> </h1>
     <nav>
-        <a href="#">Início</a>
-        <a href="#">Biblioteca</a>
+        <ul class="menu">
+            <li><a href="/index.html">Início</a></li>
+            <li>Biblioteca
+                <ul class="menu-wrap">
+                    <li><a href="/Pages/cangaco.html">Cangaço</li>
+                    <li><a href="/Pages/oriflamme.html">Oriflamme</a></li>
+                    <li><a href="/Pages/papertown.html">PaperTown</a></li>
+                    <li><a href="/Pages/raids.html">Raids</a></li>
+                    <li><a href="/Pages/conspiracy.html">Conspiracy</a></li>
+                    <li><a href="/Pages/kanagawa.html">Kanagawa</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
 </header>
 
 <body>
 <!---Section Hero-Vídeo-->
-    <section class="hero-video">
+    <main class="hero-video">
         <video autoplay muted loop>
             <source src="/videos/video-inicio.mp4" type="video/mp4">
             Seu navegador não suporta vídeos HTML5.
@@ -35,35 +46,35 @@
             <h1>Uma <span>aventura</span> a cada jogada</h1>
             <p>Conheça nossa plataforma de jogos de tabuleiro brasileiros e desbrave nossa biblioteca.</p>
         </div>
-    </section>
+    </main>
 <!---Section Hero-Vídeo-End-->
 <!---Section Biblioteca-->
-    <section class="section-base library" >
+    <section class="section-base div-text" >
         <div>
             <h2>Biblioteca</h2>
-            <p>Uma seleção de 5 Jogos que você precisa conhecer em 2024</p>
+            <p>Uma seleção de 6 Jogos que você precisa conhecer em 2024</p>
         </div>
         <div class="img-tabletop">
             <div class="box">
-                <a href="#" alt="Jogo Cangaço">
+                <a href="/Pages/cangaco.html" alt="Jogo Cangaço">
                     <img src="/images/jogo-cangaco-inicio.png" alt="Jogo Cangaço">
                 </a>
-                <a href="#" alt="Jogo Oriflamme">
+                <a href="/Pages/oriflamme.html" alt="Jogo Oriflamme">
                     <img src="/images/jogo-oriflamme-inicio.png" alt="Jogo Oriflamme">
                 </a>
-                <a href="#" alt="Jogo PaperTown">
+                <a href="/Pages/papertown.html" alt="Jogo PaperTown">
                     <img src="/images/jogo-papertown-inicio.png" alt="Jogo PaperTown">
                 </a>
             </div>
             <div class="box">
-                <a href="#" alt="Jogo Raids">
+                <a href="/Pages/raids.html" alt="Jogo Raids">
                     <img src="/images/jogo-raids-inicio.png" alt="Jogo Raids">
                 </a>
-                <a href="#" alt="Jogo Conspiracy">
+                <a href="Pages/conspiracy.html" alt="Jogo Conspiracy">
                     <img src="/images/jogo-conspiracy-inicio.png" alt="Jogo Conspiracy">
                 </a>
-                <a href="#" alt="Jogo Conspiracy">
-                    <img src="/images/jogo-conspiracy-inicio.png" alt="Jogo Conspiracy">
+                <a href="/Pages/kanagawa.html" alt="Jogo Kanagaua">
+                    <img src="/images/jogo-kanagawa-inicio.png" alt="Jogo Kanagaua">
                 </a>
             </div>
         </div>
@@ -77,56 +88,53 @@
         </div>
         <div class="profiles">
             <div class="profile-card">
-                <p>Gabriel Freitas</p>
+            <p>Gabriel Freitas</p>
+            <div class="box-social">
+                <ul>
+                    <li> <a href="https://github.com/GabrielUXBR" target="_blank"> <img src="icons/github-fill.svg" alt="github"> </a>
+                    </li>
+                    <li> <a href="behance.net/GabrieFreitas" target="_blank"> <img src="/icons/behance-fill.svg" alt="Behance"> </a>
+                    </li>                    
+                    <li> <a href="https://www.linkedin.com/in/gabriel-freitas-391772218/" target="_blank"> <img src="/icons/linkedin-box-fill.svg" alt="LinkedIn"> </a>
+                    </li>                    
+                    <li> <a href="https://www.instagram.com/gabriel.uxbr/" target="_blank"> <img src="/icons/instagram-line.svg" alt="Instagram"> </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="profile-card profile-card-esther">
+                <p>Esther Sitton</p>
                 <div class="box-social">
                     <ul>
-                        <li> <a href="#"> <img src="icons/github-fill.svg" alt="github"> </a>
+                        <li> <a href="https://github.com/esitton" target="_blank"> <img src="icons/github-fill.svg" alt="github"> </a>
                         </li>
-                        <li> <a href="#"> <img src="/icons/behance-fill.svg" alt="github"> </a>
+                        <li> <a href="https://www.behance.net/esthersitton" target="_blank"> <img src="/icons/behance-fill.svg" alt="Behance"> </a>
                         </li>                    
-                        <li> <a href="#"> <img src="/icons/linkedin-box-fill.svg" alt="github"> </a>
+                        <li> <a href="https://www.linkedin.com/in/esthersitton" target="_blank"> <img src="/icons/linkedin-box-fill.svg" alt="LinkedIn"> </a>
                         </li>                    
-                        <li> <a href="#"> <img src="/icons/instagram-line.svg" alt="github"> </a>
+                        <li> <a href="https://www.instagram.com/estherzinha" target="_blank"> <img src="/icons/instagram-line.svg" alt="Instagram"> </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="profile-card">
-                <p>Gabriel Freitas</p>
+            <div class="profile-card-none">
                 <div class="box-social">
-                    <ul>
-                        <li> <a href="#"> <img src="icons/github-fill.svg" alt="github"> </a>
-                        <br>
-                        </li>
-                        <li> <a href="#"> <img src="/icons/behance-fill.svg" alt="github"> </a>
-                        </li>                    
-                        <li> <a href="#"> <img src="/icons/linkedin-box-fill.svg" alt="github"> </a>
-                        </li>                    
-                        <li> <a href="#"> <img src="/icons/instagram-line.svg" alt="github"> </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="profile-card">
-                <p>Gabriel Freitas</p>
-                <div class="box-social">
-                    <ul>
-                        <li> <a href="#"> <img src="icons/github-fill.svg" alt="github"> </a>
-                        <br>
-                        </li>
-                        <li> <a href="#"> <img src="/icons/behance-fill.svg" alt="github"> </a>
-                        </li>                    
-                        <li> <a href="#"> <img src="/icons/linkedin-box-fill.svg" alt="github"> </a>
-                        </li>                    
-                        <li> <a href="#"> <img src="/icons/instagram-line.svg" alt="github"> </a>
-                        </li>
-                    </ul>
+                    <p>Estamos contratando</p>
                 </div>
             </div>
         </div>
-        
     </section>
 <!---Section Profile-End-->
 
 </body>
+
+<footer>
+    <h1 class="logo-krm"> <a href="/index.html">krm</a> </h1>
+    <ul class="footer-ul">
+        <li><h3>Alunos FIAP</h3></li>
+        <li>Gabriel Freitas RM 554368</li>
+        <li>Esther Sitton RM 558081</li>
+    </ul>
+</footer>
+
 </html>
