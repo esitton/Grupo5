@@ -27,13 +27,12 @@
 
 .img-tabletop {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
 }
 
 .box {
     display: flex;
-    width: 300px;
+    width:auto;
     flex-direction: row;
     gap: 40px;
     margin: 4px;
@@ -42,7 +41,7 @@
 }
 .box:hover{
         z-index: 10;
-        transform: scale(1.3);
+        transform: scale(1.2);
 }
 .box,
 .box img {
@@ -51,7 +50,6 @@ transition: all 250ms ease-out;
 
 .img-tabletop img {
     border-radius: 1.25rem;
-    
 }
 
 /* Profile */
@@ -224,4 +222,100 @@ transition: all 250ms ease-out;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+/*Masters*/
+
+.profile-card-masters {
+    display: flex;
+    width: 12rem;
+    height: 18rem;
+    padding: 2rem 2rem;
+    border: 10px solid #fff;
+    border-radius: 2rem;
+    background-image: url(/images/perfil-gabriel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(100%);
+}
+
+.profile-card-masters-esther {
+    display: flex;
+    width: 12rem;
+    height: 18rem;
+    padding: 2rem 2rem;
+    border: 10px solid #fff;
+    border-radius: 2rem;
+    background-image: url(/images/perfil-esther.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: saturate(100%);
+}
+
+.hero-text-masters {
+    display: flex;
+    flex-direction: row;
+    gap: 2.5em;
+    z-index: 1;
+}
+
+.hero-text-masters h1 {
+    font-size: 6rem;
+    line-height: 1em;
+}
+
+.hero-text-masters p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.gaming-list li {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between; 
+    margin-bottom: 1rem; 
+}
+
+.gaming-list p {
+    margin-right: 2rem;
+}
+
+.gaming-list h3 {
+    font-size: 3.3rem;
+    color: var(--color-blue);
+    line-height: 3rem;
+}
+
+.profile-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Sobre mim */
+
+
+.div-text ul {
+    flex-direction: column;
+}
+
+/* badges */
+
+
+.badges h3 {
+    display: flex;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+.badges li p{
+    justify-content: center;
+    align-items: center;
+}
+
+
+.badges p {
+    font-size: 1rem;
+    text-align: center;
 }
